@@ -1,4 +1,4 @@
-package com.bitconex.ordermanagement.administration.useradministration.config;
+package com.bitconex.ordermanagement.administration.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

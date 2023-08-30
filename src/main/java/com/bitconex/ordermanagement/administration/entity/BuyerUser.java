@@ -1,4 +1,4 @@
-package com.bitconex.ordermanagement.administration.useradministration.entity;
+package com.bitconex.ordermanagement.administration.entity;
 
 import jakarta.persistence.*;
 
@@ -8,13 +8,19 @@ import java.time.LocalDate;
 //@DiscriminatorValue("ROLE_CUSTOMER")
 public class BuyerUser extends User {
 
+
+    @Column(name = "first_name")
     private String firstName;
+
+    @Column(name = "last_name")
     private String lastName;
+
+    @Column(name = "date_of_birth")
     private LocalDate dateOfBirth;
 
     @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "adress_id")
-    private Adress adress;
+    @JoinColumn(name = "address_id")
+    private Address address;
 
     public BuyerUser() {
     }
@@ -52,12 +58,12 @@ public class BuyerUser extends User {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public Adress getAdress() {
-        return adress;
+    public Address getAdress() {
+        return address;
     }
 
-    public void setAdress(Adress adress) {
-        this.adress = adress;
+    public void setAdress(Address address) {
+        this.address = address;
     }
 
 

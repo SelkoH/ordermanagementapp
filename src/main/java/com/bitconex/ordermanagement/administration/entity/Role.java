@@ -1,22 +1,18 @@
-package com.bitconex.ordermanagement.administration.useradministration.entity;
+package com.bitconex.ordermanagement.administration.entity;
 
 
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "roles")
 public class Role {
 
     @Id
-    @SequenceGenerator(name = "role_sequence",
-            sequenceName = "role_sequence",
-            allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.AUTO)
 
-    @GeneratedValue(strategy = GenerationType.SEQUENCE,
-            generator = "role_sequence")
+    @Column(name = "id")
     private Long id;
 
-    @Column(nullable = false)
+    @Column(name = "role_name", nullable = false)
     private String name;
 
 

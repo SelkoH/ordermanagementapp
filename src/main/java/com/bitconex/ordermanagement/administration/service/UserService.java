@@ -1,9 +1,9 @@
-package com.bitconex.ordermanagement.administration.useradministration.service;
+package com.bitconex.ordermanagement.administration.service;
 
-import com.bitconex.ordermanagement.administration.useradministration.dto.UserDTO;
-import com.bitconex.ordermanagement.administration.useradministration.entity.AdminUser;
-import com.bitconex.ordermanagement.administration.useradministration.entity.BuyerUser;
-import com.bitconex.ordermanagement.administration.useradministration.entity.User;
+import com.bitconex.ordermanagement.administration.dto.UserDTO;
+import com.bitconex.ordermanagement.administration.entity.AdminUser;
+import com.bitconex.ordermanagement.administration.entity.BuyerUser;
+import com.bitconex.ordermanagement.administration.entity.User;
 
 import javax.management.relation.RoleNotFoundException;
 import javax.security.auth.login.CredentialException;

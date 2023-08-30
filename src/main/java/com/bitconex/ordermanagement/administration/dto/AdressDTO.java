@@ -1,9 +1,9 @@
-package com.bitconex.ordermanagement.administration.useradministration.dto;
+package com.bitconex.ordermanagement.administration.dto;
 
 public class AdressDTO {
     public Long id;
     public String streetAndNumber;
-    public String postcode;
+    public Long postcode;
     public String city;
     public String country;
 
@@ -23,11 +23,11 @@ public class AdressDTO {
         this.streetAndNumber = streetAndNumber;
     }
 
-    public String getPostcode() {
+    public Long getPostcode() {
         return postcode;
     }
 
-    public void setPostcode(String postcode) {
+    public void setPostcode(Long postcode) {
         this.postcode = postcode;
     }
 

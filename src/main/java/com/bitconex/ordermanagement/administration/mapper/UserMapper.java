@@ -1,7 +1,7 @@
-package com.bitconex.ordermanagement.administration.useradministration.mapper;
+package com.bitconex.ordermanagement.administration.mapper;
 
-import com.bitconex.ordermanagement.administration.useradministration.dto.UserDTO;
-import com.bitconex.ordermanagement.administration.useradministration.entity.BuyerUser;
+import com.bitconex.ordermanagement.administration.dto.UserDTO;
+import com.bitconex.ordermanagement.administration.entity.BuyerUser;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

@@ -1,4 +1,4 @@
-package com.bitconex.ordermanagement.administration.useradministration.dto;
+package com.bitconex.ordermanagement.administration.dto;
 
 public class RoleDTO {
 

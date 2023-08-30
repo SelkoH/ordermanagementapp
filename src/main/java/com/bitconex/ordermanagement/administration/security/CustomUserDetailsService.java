@@ -1,7 +1,7 @@
-package com.bitconex.ordermanagement.administration.useradministration.security;
+package com.bitconex.ordermanagement.administration.security;
 
-import com.bitconex.ordermanagement.administration.useradministration.entity.User;
-import com.bitconex.ordermanagement.administration.useradministration.repository.UserRepository;
+import com.bitconex.ordermanagement.administration.entity.User;
+import com.bitconex.ordermanagement.administration.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

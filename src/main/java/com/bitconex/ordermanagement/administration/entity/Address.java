@@ -1,36 +1,32 @@
-package com.bitconex.ordermanagement.administration.useradministration.entity;
+package com.bitconex.ordermanagement.administration.entity;
 
 import jakarta.persistence.*;
 
 
 @Entity
-@Table(name = "adress")
-public class Adress {
+public class Address {
 
     @Id
-    @SequenceGenerator(name = "adress_sequence",
-            sequenceName = "adress_sequence",
-            allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.AUTO)
 
-    @GeneratedValue(strategy = GenerationType.SEQUENCE,
-            generator = "adress_sequence")
-
+    @Column(name = "id")
     private Long id;
 
-    @Column(nullable = false)
+    @Column(name = "street_and_number", nullable = false)
     private String streetAndNumber;
 
-    @Column(nullable = false)
-    private String postcode;
-    @Column(nullable = false)
+    @Column(name = "postcode", nullable = false)
+    private Long postcode;
+
+    @Column(name = "city", nullable = false)
     private String city;
-    @Column(nullable = false)
+    @Column(name = "country", nullable = false)
     private String country;
 
-    public Adress() {
+    public Address() {
     }
 
-    public Adress(String streetAndNumber, String postcode, String city, String country) {
+    public Address(String streetAndNumber, Long postcode, String city, String country) {
         this.streetAndNumber = streetAndNumber;
         this.postcode = postcode;
         this.city = city;
@@ -53,11 +49,11 @@ public class Adress {
         this.streetAndNumber = streetAndNumber;
     }
 
-    public String getPostcode() {
+    public Long getPostcode() {
         return postcode;
     }
 
-    public void setPostcode(String postcode) {
+    public void setPostcode(Long postcode) {
         this.postcode = postcode;
     }
 

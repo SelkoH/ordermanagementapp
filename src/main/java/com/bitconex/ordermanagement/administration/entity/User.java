@@ -1,6 +1,7 @@
-package com.bitconex.ordermanagement.administration.useradministration.entity;
+package com.bitconex.ordermanagement.administration.entity;
 
 import jakarta.persistence.*;
+
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
@@ -13,22 +14,17 @@ import java.util.Set;
 public abstract class User {
 
     @Id
-    @SequenceGenerator(name = "users_sequence",
-            sequenceName = "users_sequence",
-            allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.AUTO)
 
-    @GeneratedValue(strategy = GenerationType.SEQUENCE,
-            generator = "users_sequence")
-
-
+    @Column(name = "id")
     private Long id;
-    @Column(nullable = false)
+    @Column(name = "login_name", nullable = false)
     private String loginName;
 
-    @Column(nullable = false)
+    @Column(name = "password", nullable = false)
     private String password;
 
-    @Column(nullable = false)
+    @Column(name = "email", nullable = false)
     private String email;
 
 

@@ -1,13 +1,13 @@
-package com.bitconex.ordermanagement.administration.useradministration.service;
+package com.bitconex.ordermanagement.administration.service;
 
-import com.bitconex.ordermanagement.administration.useradministration.mapper.UserMapper;
-import com.bitconex.ordermanagement.administration.useradministration.dto.UserDTO;
-import com.bitconex.ordermanagement.administration.useradministration.entity.AdminUser;
-import com.bitconex.ordermanagement.administration.useradministration.entity.BuyerUser;
-import com.bitconex.ordermanagement.administration.useradministration.entity.Role;
-import com.bitconex.ordermanagement.administration.useradministration.entity.User;
-import com.bitconex.ordermanagement.administration.useradministration.repository.RoleRepository;
-import com.bitconex.ordermanagement.administration.useradministration.repository.UserRepository;
+import com.bitconex.ordermanagement.administration.mapper.UserMapper;
+import com.bitconex.ordermanagement.administration.dto.UserDTO;
+import com.bitconex.ordermanagement.administration.entity.AdminUser;
+import com.bitconex.ordermanagement.administration.entity.BuyerUser;
+import com.bitconex.ordermanagement.administration.entity.Role;
+import com.bitconex.ordermanagement.administration.entity.User;
+import com.bitconex.ordermanagement.administration.repository.RoleRepository;
+import com.bitconex.ordermanagement.administration.repository.UserRepository;
 
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -109,7 +109,6 @@ public class UserServiceImpl implements UserService {
             throw new RoleNotFoundException("unknown role!");
         }
         return role;
-
     }
 
     @Override
@@ -125,5 +124,4 @@ public class UserServiceImpl implements UserService {
         }
 
     }
-
 }

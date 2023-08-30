@@ -1,4 +1,4 @@
-package com.bitconex.ordermanagement.administration.useradministration.dto;
+package com.bitconex.ordermanagement.administration.dto;
 
 import java.util.Set;
 

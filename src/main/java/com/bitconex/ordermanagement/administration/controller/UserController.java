@@ -1,9 +1,9 @@
-package com.bitconex.ordermanagement.administration.useradministration.controller;
+package com.bitconex.ordermanagement.administration.controller;
 
-import com.bitconex.ordermanagement.administration.useradministration.dto.UserDTO;
-import com.bitconex.ordermanagement.administration.useradministration.entity.AdminUser;
-import com.bitconex.ordermanagement.administration.useradministration.entity.BuyerUser;
-import com.bitconex.ordermanagement.administration.useradministration.service.UserServiceImpl;
+import com.bitconex.ordermanagement.administration.dto.UserDTO;
+import com.bitconex.ordermanagement.administration.entity.AdminUser;
+import com.bitconex.ordermanagement.administration.entity.BuyerUser;
+import com.bitconex.ordermanagement.administration.service.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
